@@ -3,6 +3,9 @@ import numpy as np
 from PIL import Image
 from numpy.linalg import inv
 import math
+import warnings
+
+warnings.filterwarnings(action='ignore')
 
 img = Image.open("img.jpg").convert('L')
 img = np.array(img)
